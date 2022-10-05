@@ -1,66 +1,83 @@
 
-    
-    
-   
+body{
+    background-color: orange;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 100px;
+}
 
+#header {
+    background-color: #6b083e;
+    color: beige;
+    text-align: center;
+    padding: 5px;
 
- 
+  
+
+    
+
+}
+
 #container {
-    background-color:red;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center; 
     width: 800px;
-    margin-left: auot;
+    margin-left: auto;
     margin-right:auto ;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
 }
     
 #content {
-    padding: ; 10px; 
+    text-align: center;
+    border-radius: 1000px;
+    
+    padding:10px; 
 
 }
 
 #nav {
-    width: 180px; 
-    float: right; 
-}
-#nav ul {
-    list-style-type: none;
-    padding: 0;
+    background-color: beige;
+    color:#6b083e
+    width: 150px; 
+    float: left; 
+
+  
+  
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color:#6b083e
 }
 
 #main {
-    width: 600px;
-    float: right;
-}
-
-
-
+    display: flex
+    flex: 1 1 0;
+     margin 0 auto;
+   background-color: orange;
+    
    
-   
- .my-form{
-    padding:20px;
-
- }
- .my-form.form-group{
-    padding-bottom:15px;
-
- }
- .my-form label{
-    display:block;
- }
- .my-form input[type="text"], .my-form textarea{
-    padding:8px;
-    width:25%;
- }
-
- my-form input[type="submit"]{
-    background-color: lightgray;
-    color:#fff
-    padding:10px 15px;
-    border:none
+    
 }
-
 #footer {
+    background-color:gray;
+    text-align: right;
+    padding: 20px
+    color: white;
     clear: both;
-}
+    float: :right
 
 
 
