@@ -1,86 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 
 body{
-    background-color: orange;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: palevioletred;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    border: 100px;
-}
-
-#header {
-    background-color: #6b083e;
-    color: beige;
-    text-align: center;
-    padding: 5px;
-
-  
-
-    
-
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
     flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center; 
-    width: 800px;
-    margin-left: auto;
-    margin-right:auto ;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-}
-    
-#content {
+    width: 100%;
     text-align: center;
-    border-radius: 1000px;
-    
-    padding:10px; 
-
-}
-
-#nav {
-    background-color: beige;
-    color:#6b083e
-    width: 150px; 
-    float: left; 
-
-  
-  
-
-
-
-
-
-
-a {
-    text-decoration: none;
-    color:#6b083e
-}
-
-#main {
-    display: flex
-    flex: 1 1 0;
-     margin 0 auto;
-   background-color: orange;
-    
-   
     
 }
-#footer {
-    background-color:gray;
-    text-align: right;
-    padding: 20px
-    color: white;
-    clear: both;
-    float: :right
+
+
+
+.nav{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+box-sizing: border-box;
+
+    border: 50px;
+   border-radius: 20%;
+
+  position: relative;
+  
+    align-items:flex-end;
+    height: 50px;
+    
+    
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.menu :hover{
+    text-decoration:wavy;
+    color: blueviolet;
+    background-color: aliceblue;
+    transition-duration: 2s;
+    
+}
+
+
+.content {
+    display: flex;
+    
+    border: 200px;
+    background-color:beige;
+
+    align-content:center;
+    align-items: center;
+    
+}
+
+ul li:hover{
+    transform: scale (1.1);
+    transition: 0.3s; 
+}
 
 
 
 
+.videos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
+h4{
+    text-align: center;
+    text-shadow: 5px;
+    color: brown;
+}
 
   
+@media screen and (max-width: 780px) {
+    .content{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    
+}
