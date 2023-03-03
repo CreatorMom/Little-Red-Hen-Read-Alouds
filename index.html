@@ -15,7 +15,6 @@
     <title>Little Red Hen Read Alouds</title>
   </head>
   
-  
   <header>
     <div class="title">
     <h1>Little Red Hen Read Alouds</h1>
@@ -28,15 +27,15 @@
       </ul>
     </div>
   </div>
-   
-  </header>
+   </header>
+ 
 
  <body>
 <div class="content">
-<h1></h1>
+<h1 id="greeting-header"></h1>
      
     <div class="main">
-        <h2><strong>Basic Info</strong></h2> 
+      <h2><strong>Basic Info</strong></h2> 
     <p>Here at Little Read Hen Read Alouds &hearts; we read the classic fairy tales, Aesop's Fables and more! <br>
 We read books such as <strong>Little Red Riding Hood, The Little Red Hen, <br>
 The Three Little Pigs, and even darker tales by Brother's Grimm such as Hensel and Gretel!</strong><br>
@@ -89,18 +88,20 @@ If that sounds like fun then come join me!!!<br></p>
      </div>
     
 
-         <form class="my-form">
-            <div class="form-group" >
+            <div class="form-group">
+              
+         <form class="my-form" onsubmit="sendEmail(); reset();return false;">
                 <label>Name:</label>
-                <input type="text" name="name"class="form-group">
+                <input type="text" id="name"class="form-group" placeholder="Name" required>
                 <label>Email: </label>
-                <input type="text" name="email">
+                <input type="text" id="email" placeholder="Email id" required>
                 
 
                 <label>Message: </label>
-                <textarea name="message"></textarea>
+                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
 
-                <input class="button" type="submit" value="submit" name="">
+                
+                <button type="submit">Send</button>
             </div>
 
         </form>
@@ -113,7 +114,7 @@ If that sounds like fun then come join me!!!<br></p>
           </div>
 
 <script src="script.js"></script>
-                
+<script src=https://smtpjs.com/v3/smtp.js></script>
 </body>
 
 

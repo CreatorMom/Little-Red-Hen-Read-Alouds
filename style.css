@@ -17,6 +17,8 @@ body{
 
 .content h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    padding: 10px;
 }
 
 .title{
@@ -94,6 +96,16 @@ h4{
     }
     .readAloud:hover + .videos{
     display: block;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    form button{
+        margin: 10px;
+        
     }
 
   
