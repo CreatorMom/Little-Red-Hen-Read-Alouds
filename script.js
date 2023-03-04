@@ -10,9 +10,7 @@ greetingHeader.innerHTML = `<h1>${greeting}</h1>`;
 
 function sendEmail(){
 Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "professional.martinez@gmail.com",
-    Password : "astlee8898$$",
+    secureToken: "9cf2ccb6-744f-42f1-8889-9f94a8f080b1", 
     To : 'creatormomstorybook@gmail.com',
     From : document.getElementById("email").value,
     Subject : "New Contact Form Inquiry",
