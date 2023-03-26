@@ -22,6 +22,9 @@ Email.send({
 );
 }
 
+
+
+
 const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 const btn = document.querySelector("#btn");
