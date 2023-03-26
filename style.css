@@ -14,6 +14,31 @@ body{
     
 }
 
+.quote-box{
+    margin: 60px;
+}
+
+#quote{
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+#author{
+    color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    
+    
+}
+
+#btn{
+
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
 
 .content h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
