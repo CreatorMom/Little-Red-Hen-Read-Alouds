@@ -1,11 +1,23 @@
-let greetingHeader = document.getElementById("greeting-header");
-let timeNow = new Date().getHours();
-console.log(timeNow);
-let greeting = timeNow < 12 ? "Good Morning!"
-: timeNow >= 12 && timeNow < 18 ? "Good Afternoon!"
-: "Good Evening!";
-console.log(greeting);
-greetingHeader.innerHTML = `<h1>${greeting}</h1>`;
+
+    let time = new Date();
+    time = time.getHours();
+    
+    let greeting = document.getElementById("greeting");
+
+    if (time >=0&&time<12){
+        greeting.innerHTML="Good Morning";
+        greeting.style.color="orange";
+    } else if (time >=12&&time<19){
+        greeting.innerHTML= "Good Afternoon";
+        greeting.style.color="pink";
+    }else {
+        greeting.innerHTML= "Good Evening";
+    
+    }
+
+    
+;
+
 
 
 function sendEmail(){
